@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Assistant Bot</title>
+    <link rel="stylesheet" href="{{url_for("static", filename="files/css/styles.css")}}">
+</head>
+<body>
+    <div class="chat-icon" id="chatIcon">
+        <img src="{{url_for('static', filename='files/img/chat-icon.png')}}" alt="Chat Icon">
+    </div>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>Nobel Knowledge Bot</span>
+            <div>
+                <button id="minimizeChat">-</button>
+                <button id="maximizeChat">+</button>
+                <button id="closeChat">X</button>
+            </div>
+        </div>
+
+        <div class="chat-content" id="chatContent">
+            <!-- Chat messages will appear here -->
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button id="sendMessage">Send</button>
+        </div>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    
+
+    <script src="{{url_for("static", filename="files/js/chat.js")}}"></script>
+</html>
